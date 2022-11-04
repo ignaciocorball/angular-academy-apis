@@ -1,0 +1,41 @@
+<ng-template #cartModal let-c="close" let-d="dismiss">
+    <div class="modal-header modal-header-shadow mb-2">
+        <h4 class="modal-title text-black">Carrito</h4>
+        <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+            <span aria-hidden="true" class="text-black">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-12">
+                <div class="cart-item">
+                    <div class="cart-item-image">
+                        <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="#">
+                    </div>
+                    <div class="cart-item-title">
+                        <h6 class="title">Mens Cotton Jacket</h6>
+                        <h6 class="desc">
+                            <a href="#">• men's clothing</a>
+                        </h6>
+                    </div>
+                    <div class="cart-item-price">
+                        <h6 class="price">$1.234</h6>
+                    </div>
+                    <div class="cart-toolbox">
+                        <div class="cart-item-quantity">
+                            <button class="btn btn--minus" type="button" name="button">-</button>
+                            <input class="quantity" type="text" value="1">
+                            <button class="btn btn--plus" type="button" name="button"> +</button>
+                        </div>
+                        <div class="cart-item-remove">
+                            <button class="btn btn--remove" type="button" name="button">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+

@@ -1,0 +1,71 @@
+<header class="section-header">
+  <section class="header-main shadow-sm bg-white">
+      <div class="container">
+          <div class="row align-items-center">
+            <!-- Start Nav Logo -->
+              <div class="col-2">
+                  <a href="#" class="mb-0">
+                      <img alt="#" class="img-fluid" src="assets/images/logo.png">
+                  </a>
+              </div>
+              <!-- End Nav Logo -->
+              <!-- Start Nav Categories -->
+              <div class="col-2">
+                <!--<div class="dropdown d-flex">
+                  <a href="#" class="dropdown-toggle text-dark py-3 d-block" id="dropdownCategoryMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Categorias de productos
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownCategoryMenuButton">
+                      <a class="dropdown-item" href="#">Todos</a>
+                      <a class="dropdown-item" href="#">Ropa</a>
+                      <a class="dropdown-item" href="#">Tecnología</a>
+                      <a class="dropdown-item" href="#">Accesorios</a>
+                  </div>
+                </div>-->
+              </div> 
+              <!-- End Nav Categories -->
+              <!-- Start Nav Menu -->
+              <div class="col-8">
+                  <div class="d-flex align-items-center justify-content-end pr-5">
+                    <div class="search-products">
+                      <input (input)="onSearchChange($event)" class="input-search" type="text" placeholder="Busca un producto" #searchBox>
+                      <a class="btn-search-products" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                      <div class="dropdown d-flex mx-4">
+                          <a href="#" class="dropdown-toggle text-dark py-3 d-block" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img alt="#" src="assets/images/users/rakz.png" class="img-fluid rounded-circle header-user mr-2 header-user">
+                              rakz@angularacademy.com
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Contactanos</a>
+                              <a class="dropdown-item" href="#">Términos y condiciones</a>
+                              <a class="dropdown-item" href="#">Politicas de privacidad</a>
+                              <a class="dropdown-item" href="#">Cerrar sesión</a>
+                          </div>
+                      </div>
+                      <a href="#" class="widget-header mr-4 text-dark mx-2">
+                          <div class="icon d-flex align-items-center">
+                            <div class="cart">
+                              <a href="#" (click)="openCartModal()">
+                                <i class="fa-regular fa-cart-shopping text-black-2"></i>
+                                <!--<img src="./assets/svg/icon_shopping_cart.svg" alt="logo"> -->
+                              </a>
+                              <span *ngIf="counter > 0" class="counter">{{ counter }}</span>
+                            </div>
+                          </div>
+                      </a>
+                      <a class="toggle" href="#">
+                          <span></span>
+                      </a>
+                  </div>
+              </div>
+              <!-- End Nav Menu -->
+          </div>
+      </div>
+  </section>
+</header>
+
+<!-- Cart Modal -->
+<app-cart-modal 
+#cartModal>
+</app-cart-modal>

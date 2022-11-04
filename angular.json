@@ -28,9 +28,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/style.css",
+              "src/assets/vendor/slick/slick.min.css",
+              "src/assets/vendor/slick/slick-theme.min.css",
+              "src/assets/vendor/icons/feather.css",
+              "src/assets/vendor/sidebar/demo.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/vendor/slick/slick.min.js",
+              "src/assets/vendor/sidebar/hc-offcanvas-nav.js"
+            ]
           },
           "configurations": {
             "production": {
